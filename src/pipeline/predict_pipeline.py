@@ -22,6 +22,7 @@ class PredictPipeline:
             return preds
         
         except Exception as e:
+            print(e)
             raise CustomException(e,sys)
 
 
